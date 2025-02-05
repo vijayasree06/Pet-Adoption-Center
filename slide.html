@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>/* styles.css */
+        .slideshow-container {
+            position: relative;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .mySlides {
+            display: none;
+        }
+        
+        .mySlides-fade img {
+            width: 100%;
+        }
+        </style>
+    <title>Image Slideshow</title>
+</head>
+<body>
+    <div class="slideshow-container">
+        <div class="mySlides-fade">
+            <img src="images/Donate-1.jpg" alt="Image 1">
+        </div>
+        <div class="mySlides-fade">
+            <img src="images/Donate-2.jpg" alt="Image 2">
+        </div>
+        <div class="mySlides-fade">
+            <img src="images/Donate-3.jpg" alt="Image 3">
+        </div>
+        <div class="mySlides-fade">
+            <img src="images/Donate-4.jpg" alt="Image 3">
+        </div>
+    </div>
+    <script>
+        // script.js
+let slideIndex = 0;
+
+function showSlides() {
+    let slides = document.getElementsByClassName("mySlides");
+    
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    
+    slideIndex++;
+    
+    if (slideIndex > slides.length) {
+        slideIndex = 1;
+    }
+    
+    slides[slideIndex - 1].style.display = "block";
+    
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+showSlides();
+
+    </script>
+</body>
+</html>

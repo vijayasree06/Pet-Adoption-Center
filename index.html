@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_for_all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Home</title>
+    
+</head>
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active">Home</a>
+        <a href="adopt.html">Adopt</a>
+        <a href="donation.html">Donate</a>
+        <a href="contact-us.html">Contact us</a>
+        <a href="volenteer.html">Volunteer</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+    </script>
+
+
+    <div class="first-main">
+        <div class="first-main">
+            <div class="slideshow-container">
+                <div class="slide">
+                    <a href="donation.html">
+                        <img src="images/slides.jpg" alt="Slide 1">
+                    </a>
+                </div>
+            
+                <div class="slide">
+                    <a href="adopt.html">
+                        <img src="images/slide5.png" alt="Slide 2">
+                    </a>
+                </div>
+
+                <div class="slide">
+                    <a href="volenteer.html">
+                        <img src="images/volunterr.jpg" alt="Slide 2">
+                    </a>
+                </div>
+                
+
+                <!-- Add more slides as needed -->
+                
+                <button class="prev" onclick="plusSlides(-1)">&lt;</button>
+                <button class="next" onclick="plusSlides(1)">&gt;</button>
+            </div>
+        </div>
+        
+        <script>
+            let slideIndex = 1;
+            let paused = false;
+            let autoSlideInterval;
+        
+            showSlides(slideIndex);
+            autoSlide(); // Start auto slideshow
+        
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+        
+            function showSlides(n) {
+                const slides = document.getElementsByClassName("slide");
+                if (n > slides.length) {
+                    slideIndex = 1;
+                }
+                if (n < 1) {
+                    slideIndex = slides.length;
+                }
+                for (let i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slides[slideIndex - 1].style.display = "block";
+            }
+        
+            function autoSlide() {
+                autoSlideInterval = setInterval(() => {
+                    if (!paused) {
+                        plusSlides(1); // Show the next slide if not paused
+                    }
+                }, 3000); // Change slide every 3 seconds (adjust as needed)
+            }
+        
+            // Pause or unpause when the slide is clicked
+            const slideshowContainer = document.querySelector(".slideshow-container");
+            slideshowContainer.addEventListener("click", () => {
+                paused = !paused; // Toggle the paused state
+            });
+        </script>
+        
+    </div>
+    <div class="main">
+ 
+
+        <div class="zero">
+            <h2>You Can Make a Difference</h2>
+
+            <div class="money">
+                <div class="money-elements">
+                    <img src="images/ezgif.com-gif-maker.jpg" alt="">
+                    <a href="donation.html">Donate</a>
+                    <p>
+                        "Help us care for these pets by making a donation."
+                    </p>
+                </div> 
+            </div>
+            <div class="money">
+                <div class="money-elements">
+                    <img src="images/adopt.jpg" alt="">
+                    <a href="adopt.html">Adopt</a>
+                    <p>
+                        "Give a pet a forever home today!"
+                    </p>
+                </div>
+             </div>
+             <div class="money">
+                <div class="money-elements">
+                    <img src="images/CONTACT US.png" alt="">
+                    <a href="contact-us.html">Contact us</a>
+                    <p>
+                        "To learn more about us, please don't hesitate to get in touch with us."
+                    </p>
+                </div>
+             </div>
+
+
+        </div>
+
+        <div class="first-conatiner">
+            <h2>
+                Our goals
+            </h2>
+
+            <div class="goals">
+                <div class="goals-elements">
+                    <img src="images/dog-cat-in-home.jpg" alt="dog cat in HOME">
+                    <p>TO SECURE LOVING, LIFELONG HOMES FOR OUR DOGS AND CATS</p>
+                </div>
+                <div class="goals-elements">
+                    <img src="images/human-with-pets.jpg" alt="human-with-pets">
+                    <p>TO PROMOTE ANIMAL WELFARE AND RESPONSIBLE TREATMENT IN THE COMMUNITY</p>
+                </div>
+                <div class="goals-elements">
+                    <img src="images/cat-charity.jpg" alt="cat inside a blanket">
+                    <p>TO CONTINUE FUNDRAISING EFFORTS TO FURTHER OUR MISSION AND ACHIEVE OUR GOALS</p>
+                </div>
+                <div class="goals-elements">
+                    <img src="images/dog-cat-1.jpg" alt="dog and cat together">
+                    <p>TO HELP CONTROL THE HOMELESS DOG AND CAT POPULATION</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="about">
+            <div class="about-us">
+                <h2>
+                    who are we
+                </h2>
+                <p> 
+                "Greetings, we are Pet adoption center, a non-profit organization located in the heart of St. Louis. Our core mission centers on addressing the challenges associated with pet 
+                overpopulation and the resulting hardships within our community. We are wholly committed to the rescue, 
+                rehabilitation, and successful placement of cats, dogs, kittens, and puppies who have found themselves in 
+                unfortunate circumstances."
+                </p>
+            </div>
+
+            <div class="address">
+                <img src="images/home.jpg" alt="home for dog">
+            </div>
+
+        </div>
+
+
+
+        <div class="second-container">
+            <h2>
+                "Discover 2022: A Year of Milestones and Progress"
+            </h2>
+            <div class="work">
+                <div class="work-elements">
+                    <h4>
+                        9,798
+                    </h4>
+                    <p>
+                        pets adopted
+                    </p>
+                </div>
+
+                <div class="work-elements">
+                    <h4>
+                        4,890
+                    </h4>
+                    <p>
+                        animals given a second chance through the our pet transfer program
+                    </p>
+                </div>
+
+                <div class="work-elements">
+                    <h4>
+                       65,987
+                    </h4>
+                    <p>
+                        hours of service provided by volunteers
+                    </p>
+                </div>
+
+                <div class="work-elements">
+                    <h4>
+                        9,000
+                    </h4>
+                    <p>
+                        pounds of pet food distributed to communities in need
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="features">
+        <h2 class="featured-heading">Featured animals</h2>
+        <p class="featured-heading">Meet these cool pets who can't wait to make a new friend. Stop by whenever, or just drop in for a chat</p>
+        <div class="featured-elements">
+            <img src="images/cat-1.jpeg" alt="cat to adopt">
+            <p>Name: Whiskers</p>
+            <p>Age: 2 years</p>
+            <p>Gender: Female</p>
+            <a href="contact-us.html">more info</a>
+        </div>
+
+        <div class="featured-elements">
+            <img src="images/cute-dog-headshot.jpg" alt="Dog to adopt">
+            <p>Name: Max</p>
+            <p>Age: 3 years</p>
+            <p>Gender: Male</p>
+            <a href="contact-us.html">more info</a>
+        </div>
+        <div class="featured-elements">
+            <img src="images/twin-cats.jpeg" alt="Cats to adopt">
+            <p>Name: Luna and Leo</p>
+            <p>Age: 1 year</p>
+            <p>Gender: Female and Male</p>
+            <a href="contact-us.html">more info</a>
+        </div>
+    </div>
+
+    <div class="social-media-container">
+        <p class="follow-us">Follow Us on</p>
+        <div class="social-media-icons">
+            <a href="#" class="icon-facebook" title="Follow us on Facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="#" class="icon-twitter" title="Follow us on Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="icon-youtube" title="Subscribe to our YouTube channel">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="#" class="icon-instagram" title="Follow us on Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </div>
+    
+  
+
+
+    <footer>
+        <p>&copy; 2023 Pet Adoption center. All rights reserved.</p>
+    </footer>
+
+
+</body>
+</html>

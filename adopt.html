@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Adopt a pet</title>
+    <link rel="stylesheet" href="style_for_all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* Reset some default styling for better control */
+        body {
+            margin: 0;
+            padding: 0;
+            color: rgb(2, 2, 108);
+            
+        }
+
+        /* Style the main container */
+        .adopt-main {
+            background-color: #f1f1f1;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Style the heading and introductory paragraphs */
+        .adopt-main-heading {
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .adopt-main-heading p {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+
+        .adopt-heading {
+            text-align: center;
+        }
+
+        
+
+        .adopt-pets {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding-bottom: 30px;
+            max-width: 80%;
+        }
+
+        .adopt-elements {
+            flex: 1;
+            text-align: center;
+            padding: 20px;
+            background-color: #f5f5f5;
+            border-radius: 10px;
+            margin: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .adopt-elements a{
+            color: white;
+            text-decoration: none;
+        }
+
+        .adopt-elements a:hover{
+            background-color: rgb(60, 60, 61);
+        }
+        .adopt-elements img {
+            width: 200px; /* Set a specific width */
+            height: 200px; /* Set a specific height */
+            object-fit: cover; /* Preserve aspect ratio and cover the container */
+            border-radius: 10px;
+        }
+
+        .adopt-elements p {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        .adopt-main-heading p{
+            font-size: 18px;
+        }
+        .adopt-elements a {
+            background-color: rgb(2, 2, 108);
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        p.adopt-heading{
+            font-size: 18px;
+        }
+        /* Add this media query for responsive adjustments */
+
+        @media (max-width: 768px) {
+            .adopt-elements {
+                flex-basis: 100%;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" >Home</a>
+        <a href="adopt.html" class="active">Adopt</a>
+        <a href="donation.html">Donate</a>
+        <a href="contact-us.html">Contact us</a>
+        <a href="volenteer.html">Volunteer</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+    </script>
+
+
+    <div class="adopt-main">
+        <div class="adopt-main-heading">
+            <h1>ADOPTABLE PETS</h1>
+            <p>
+                You’ll notice we don’t categorize by breed. While we love all pets, labeling can be a risky
+                proposition and, at best, a guess. Instead, we focus on what really matters—personality,
+                energy level, and the little things that can make a pet your perfect companion.
+            </p>
+            <p>
+                Our animals are very good boys and girls as diverse as the people in our community.
+                As such, they tend to get adopted quickly. This list is updated hourly, throughout the day,
+                so be sure to check back often.
+            </p>
+        </div>
+
+        <h2 class="adopt-heading">Featured animals</h2>
+        <p class="adopt-heading">Meet these cool pets who can't wait to make a new friend. Stop by whenever, or just drop in for a chat</p>
+
+        <div class="adopt-pets">
+            <div class="adopt-elements">
+                <img src="images/cat-1.jpeg" alt="cat to adopt">
+                <p>Name: Whiskers</p>
+                <p>Age: 2 years</p>
+                <p>Gender: Female</p>
+                <a href="contact-us.html">More Info</a>
+            </div>
+
+            <div class="adopt-elements">
+                <img src="images/cute-dog-headshot.jpg" alt="Dog to adopt">
+                <p>Name: Max</p>
+                <p>Age: 3 years</p>
+                <p>Gender: Male</p>
+                <a href="contact-us.html">More Info</a>
+            </div>
+            <div class="adopt-elements">
+                <img src="images/twin-cats.jpeg" alt="Cats to adopt">
+                <p>Name: Luna and Leo</p>
+                <p>Age: 1 year</p>
+                <p>Gender: Female and Male</p>
+                <a href="contact-us.html">More Info</a>
+            </div>
+            <div class="adopt-elements">
+                <img src="images/dog-1.jpg" alt="dog to adopt">
+                <p>Name: Rex</p>
+                <p>Age: 4 years</p>
+                <p>Gender: Male</p>
+                <a href="contact-us.html">More Info</a>
+            </div>
+
+            <div class="adopt-elements">
+                <img src="images/dog-3.jpg" alt="dog to adopt">
+                <p>Name: Bella</p>
+                <p>Age: 2 years</p>
+                <p>Gender: Female</p>
+                <a href="contact-us.html">More Info</a>
+            </div>
+
+            <div class="adopt-elements">
+                <img src="images/cat-2.jpg" alt="cats to adopt">
+                <p>Name: Mittens</p>
+                <p>Age: 4 months</p>
+                <p>Gender: Male</p>
+                <a href="contact-us.html">More Info</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="footer">
+        <div class="social-media-container">
+            <p class="follow-us">Follow Us on</p>
+            <div class="social-media-icons">
+                <a href="#" class="icon-facebook" title="Follow us on Facebook">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                <a href="#" class="icon-twitter" title="Follow us on Twitter">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a href="#" class="icon-youtube" title="Subscribe to our YouTube channel">
+                    <i class="fa fa-youtube"></i>
+                </a>
+                <a href="#" class="icon-instagram" title="Follow us on Instagram">
+                    <i class="fa fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+        </div>
+    
+  
+
+
+    <footer>
+        <p>&copy; 2023 Pet Adoption center. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

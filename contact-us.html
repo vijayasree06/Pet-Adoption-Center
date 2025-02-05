@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact pet adoption center</title>
+    <link rel="stylesheet" href="style_for_all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+        .contact-container {
+            background-color: antiquewhite;
+        }
+
+        .contact-left-container {
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+            width: 35%;
+            float: left;
+            overflow: hidden;
+            padding: 0;
+            margin: 0;
+            background: rgb(85, 85, 86);
+            color: white;
+        }
+
+        .contact-right-container {
+            box-sizing: border-box;
+            width: 65%;
+            float: left;
+            background-color: white;
+            padding-bottom: 60px;
+        }
+        .contact-right-container h4{
+            text-align: center;
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        .contact-right-container h2{
+            text-align: center;
+            font-weight: bold;
+            font-size: 34px;
+        }
+
+
+        .contact-two img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Media query for screens smaller than 768px (adjust as needed) */
+        @media (max-width: 768px) {
+            .contact-left-container,
+            .contact-right-container {
+                width: 100%;
+                float: none;
+            }
+        }
+
+        /* Style the form */
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        input[type="submit"] {
+            background-color: rgb(2, 2, 108);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: rgb(2, 2, 108);
+        }
+
+    .social-media-container {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(2, 2, 108); /* Background color for the icons container */
+    color: white;
+    padding: 20px;
+    margin-top: 35px;
+    
+}
+
+.follow-us {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.social-media-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-media-icons a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-media-icons a:hover {
+    color: #ccc;
+}
+
+
+
+
+
+        .contact-right-container img{
+            width: 100%;
+            height: auto;
+        }
+        .contact-right-container{
+            color: rgb(2, 2, 108);;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" >Home</a>
+        <a href="adopt.html" >Adopt</a>
+        <a href="donation.html" >Donate</a>
+        <a href="contact-us.html" class="active">Contact us</a>
+        <a href="volenteer.html">Volunteer</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+    </script>
+
+    <div class="contact-container">
+        <div class="contact-left-container">
+            <div class="contact-one">
+                <h1>Contact Us</h1>
+                <p>Email: saikumarreddy.kaluvakolu@slu.edu</p>
+                <p>Phone: +1 (314)-267-2708</p>
+                <p>Address: 337 Leonard Ave</p>
+                <p>In-person “meet n’ greets” with our adoptable animals are always welcome</p>
+            </div>
+            <div class="contact-two">
+                <a href="donation.html"><img src="images/ad.png" alt=""></a>
+            </div>
+        </div>
+        
+        <div class="contact-right-container">
+            <img src="images/contact-us.jpg" alt="dogs looking down">
+            <h2>Do you have an questions?</h2>
+            <h4>Fell free to reach us out</h4>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+
+        </div>
+    </div>
+
+    
+    <div class="footer">
+        <div class="footer">
+            <div class="social-media-container">
+                <p class="follow-us">Follow Us on</p>
+                <div class="social-media-icons">
+                    <a href="#" class="icon-facebook" title="Follow us on Facebook">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a href="#" class="icon-twitter" title="Follow us on Twitter">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="#" class="icon-youtube" title="Subscribe to our YouTube channel">
+                        <i class="fa fa-youtube"></i>
+                    </a>
+                    <a href="#" class="icon-instagram" title="Follow us on Instagram">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            </div>
+        </div>
+        
+      
+    
+    
+        <footer>
+            <p>&copy; 2023 Pet Adoption center. All rights reserved.</p>
+        </footer>
+    </div>
+
+
+    
+</body>
+</html>
